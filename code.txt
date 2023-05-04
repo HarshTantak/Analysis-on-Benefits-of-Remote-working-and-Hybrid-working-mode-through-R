@@ -1,0 +1,13 @@
+sheet=read.csv("E:\\Notes\\avishkar\\avishkar ressponses final.csv")
+> library(MASS)
+> View(sheet)
+> encoder = LabelEncoder$new()
+> encoder$fit(sheet$X18...How.many.opportunities.do.you.think.work.from.home.model.provides.)
+> encoder$fit_transform(sheet$X18...How.many.opportunities.do.you.think.work.from.home.model.provides.)
+> x1=encoder$transform(sheet$X18...How.many.opportunities.do.you.think.work.from.home.model.provides.)
+> sheet$X18...How.many.opportunities.do.you.think.work.from.home.model.provides.=x1
+ encoder$fit(sheet$X28....Do.you.feel.not.being.in.Office.full.Time.can.Hinder.your.Development...Progression..)
+> encoder$fit_transform(sheet$X28....Do.you.feel.not.being.in.Office.full.Time.can.Hinder.your.Development...Progression..)
+x2=encoder$transform(sheet$X28....Do.you.feel.not.being.in.Office.full.Time.can.Hinder.your.Development...Progression..)
+> sheet$X28....Do.you.feel.not.being.in.Office.full.Time.can.Hinder.your.Development...Progression..=x2
+> 

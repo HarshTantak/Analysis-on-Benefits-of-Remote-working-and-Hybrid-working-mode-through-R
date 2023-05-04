@@ -1,0 +1,75 @@
+ 
+Ho:There is no relaion between opportunities that an employee gets while WHF and the possibilty that an employee's development 
+can hinder while not being in office full-time.
+Vs H1:not Ho
+
+d1=table(data$X18...How.many.opportunities.do.you.think.work.from.home.model.provides.,data$X28....Do.you.feel.not.being.in.Office.full.Time.can.Hinder.your.Development...Progression..)
+> print(d1)
+                              
+                               Maybe No Yes
+  Less opportunity                12 10  14
+  Same scope as that of before    11 10   9
+  Vast opportunity                17 28  33
+> print(chisq.test(d1))
+
+        Pearson's Chi-squared test
+
+data:  d1
+X-squared = 3.5896, df = 4, p-value = 0.4644
+
+Decision criteria: Rej Ho if p-value<0.05
+here p-value =0.46 >0.05
+therefore, we do not rej Ho
+
+conclusion: our hypothesis is true and WFH model is effective for an employee without getting affected he's/her's development or progress.
+
+
+Ho:There is no relation between age and efficiency of an employee while working from Home
+VS H1:Not Ho
+
+
+d2=table(data$X2...Please.select.your.age.category,data$X27....How.efficient.do.you.think.you.re.now.as.compared.to.when.you.were.working.from.the.office..)
+> print(d2)
+       
+        moderately effective not at all very much effective
+  18-30                   50          2                  33
+  31-40                   10          1                  13
+  41-50                    6          1                  10
+  51-60                    5          2                  11
+> print(chisq.test(d2))
+
+        Pearson's Chi-squared test
+
+data:  d2
+X-squared = 9.8496, df = 6, p-value = 0.1311
+
+Decision criteria: Rej Ho if p-value<0.05
+here p-value =0.1311 >0.05
+therefore, we do not rej Ho
+
+conclusion :Our hypothesis is true which means employee from all age group can work effectively in WFH model.
+
+
+Ho:There is no relation between the change in productivity of an employee while WFH and maintaining their work-life balance.
+d3=table(data$X7...What.according.to.you.with.respect.to.productivity.has.changed.after.WFH..Work.from.Home....,data$X9....Do.you.think.your.Personal.life.and.work.life.is.balanced.in.the.WFH..Work.from.Home..model.)
+> print(d3)
+                 
+                  No Somewhat Yes
+  Cannot say       5        8  10
+  Negative change  8        2   4
+  No change        4        3   7
+  Positive change 22       23  48
+> print(chisq.test(d19))
+
+        Pearson's Chi-squared test
+
+data:  d3
+X-squared = 8.3914, df = 6, p-value = 0.2108
+
+decision:Rej Ho if p-value<0.05
+here,p-value=0.218
+therefore,we rej Ho
+
+conclusion:
+
+
